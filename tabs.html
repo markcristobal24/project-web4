@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="tabs.js"></script>	
+		<link href="jquery-ui.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="bootstrap.min.css" />
+		<script src="bootstrap.min.js"></script>
+	</head>
+	
+<body>
+		<h2>College of Information and Communications Technology (CICT)</h2>
+		<div id="tabs">
+			<!-- Menu Tab -->
+			<ul>
+				<li><a href="#tab1">ADD</a></li>
+				<li><a href="#tab2">EDIT</a></li>
+				<li><a href="#tab3">DELETE</a></li>
+			</ul>
+			<!-- First Tab -->
+			<div id="tab1">
+			<div class="container d-flex justify-content-center align-items-center">
+		<form>
+			<div class="container">
+
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder="Steam App Id" id="steamId" name="id"
+						onkeyup="showAvail(this.value)" required />
+					<label for="steamId" class="form-label fw-bold">Steam App ID:</label>
+					<span><i></i><label id="avail"></label></span>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control " placeholder="Game Title" id="gameTitle" name="gameTitle"
+						required></input>
+					<label for="gameTitle" class="form-label fw-bold">Game Title:</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder="Genre" id="genre" name="genre" required />
+					<label for="genre" class="form-label fw-bold">Genre:</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder="Company" id="company" name="company"
+						required />
+					<label for="company" class="form-label fw-bold">Company:</label>
+				</div>
+				<div class="form-floating mb-3">
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder="Revenue" id="revenue" name="revenue"
+						required />
+					<label for="revenue" class="form-label fw-bold">Revenue:</label>
+				</div>
+				<div class="position-absolute top-70 start-50 translate-middle-x d-flex justify-content-center gap-2">
+					<input type="submit" value="Save" onclick="check()" class="btn btn-primary" />
+					<label id="txtPrompt"></label>
+					<button type="button" onclick="window.location.href='mainpage.php'" class="btn btn-secondary">Main
+						Page</button>
+				</div>
+
+
+
+			</div>
+
+		</form>
+	</div>
+			</div>
+			<!-- Second Tab -->
+			<div id="tab2">
+				<p style="text-align: justify;">
+				A Bachelor of Library and Information Science (BLIS) is an undergraduate academic degree 
+				program that prepares students for professional work in the field of library and information
+				science. It focuses on the organization, storage, retrieval, and dissemination of information
+				resources, as well as the management and administration of libraries and information centers.
+				This degree equips students with the knowledge and skills to effectively organize and manage
+				information, develop information systems, provide information services, and manage libraries
+				and information centers. Graduates of BLIS programs can pursue careers as librarians, information
+				specialists, information analysts, knowledge managers, and other related roles in various types
+				of organizations.
+				</p>
+			</div>
+			<!-- Third Tab -->
+			<div id="tab3">
+				<p style="text-align: justify;">
+				A Bachelor of Science in Information Systems (BSIS) is an undergraduate degree program that focuses
+				on the intersection of technology, business, and people. It covers the design, development, and
+				management of information systems that support business operations and decision-making processes.
+				This degree program includes courses on database management, programming, systems analysis and
+				design, project management, and business fundamentals. Graduates of BSIS programs are equipped
+				with the skills to design and implement information systems that meet the needs of businesses and
+				organizations. They can pursue careers as business analysts, systems analysts, database administrators,
+				project managers, and other related roles in various industries.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	label {
+		display: block;
+		margin-bottom: 5px;
+
+	}
+
+	input[type="text"] {
+
+		width: 50%;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+	}
+
+
+
+	a {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+		color: #007bff;
+		text-decoration: none;
+	}
+
+	body {
+		background-color: #23262E;
+		
+	}
+</style>

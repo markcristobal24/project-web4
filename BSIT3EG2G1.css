@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+.games {
+  width: 50%;
+  /* 1C */
+  margin-left: 25%;
+  /* 1A */
+  text-align: center;
+}
+
+.name,
+.id {
+  /* 3A */
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.topic {
+  color: #0aab28;
+  /* 2A */
+  font-size: 40px;
+  /* 2B */
+  font-weight: bolder;
+  /* 2C */
+  text-align: center;
+  /* 2D */
+  margin-bottom: px;
+  font-family: "motiva Sans", Sans-serif;
+}
+
+.game {
+  display: block;
+  width: 750px;
+  border-radius: 20px;
+  margin: 15px auto;
+}
+
+.game:nth-of-type(even) {
+  border: 3px solid rgb(29, 70, 194);
+  background-color: #23262e;
+}
+
+.game:nth-of-type(odd) {
+  border: 3px solid #31873b;
+  background-color: #23262e;
+}
+
+/* 6A */
+.id::before {
+  content: "Steam App ID: ";
+  color: rgb(75, 207, 211);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.name::before {
+  content: "Name: ";
+  color: rgb(75, 207, 211);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.genre::before {
+  content: "Genre: ";
+  color: rgb(75, 207, 211);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.company::before {
+  content: "Company: ";
+  color: rgb(75, 207, 211);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.date::before {
+  content: "Release Date: ";
+  color: rgb(75, 207, 211);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.revenue::before {
+  content: "Revenue: ";
+  color: rgb(75, 207, 211);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.id,
+.name,
+.genre,
+.company,
+.date,
+.revenue {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* 5C */
+  padding-left: 50px;
+  /* 5B */
+  padding-right: 50px;
+  font-size: 20px;
+  /* 3C */
+  color: white;
+}
+
+.name {
+  color: rgb(88, 217, 103);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.genre,
+.company,
+.date,
+.revenue {
+  text-align: left;
+  /* 3B */
+}
+
+.body1 {
+  background-color: #23262e;
+}
+
+.bodySearch {
+  background-color: #23262e;
+  text-align: center;
+}
+
+.bodyAdd {
+  background-color: #23262e;
+  text-align: center;
+  padding-top: 5%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  /* margin-left: 20%; */
+  /* background-color:#2583d4; */
+  background: linear-gradient(to right, #0d8dbf, #0d2ebf);
+  margin-bottom: 5%;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+  /* border-style: solid; */
+  border-radius: 10px;
+  /* background-color: orange; */
+  padding: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  /* text-transform: uppercase; */
+  border-radius: 15px;
+  margin: 0px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "motiva Sans", Sans-serif;
+}
+
+.Sbutton {
+  margin: 0 30px;
+  border-style: 5px solid;
+  border-radius: 10px;
+  border-width: 3px;
+  background-color: #0aab28;
+  color: white;
+  font-weight: 700;
+  padding: 11px;
+  font-family: "motiva Sans", Sans-serif;
+  font-size: 16px;
+}
+
+#txtHint, #avail {
+  color: white;
+  margin-left: 10px;
+}
+
+.formm {
+  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+}
+
+.search-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  height: 50px;
+  overflow: hidden;
+  
+  border: solid 2px;
+  font-family: var(--content-font);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-box {
+	position: relative;
+  }
+
+#suggestion {
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	max-width: 700px;
+	width: 100%;
+	top: calc(100% + 5px);
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	border-radius: 5px;
+	border: solid 2px black;
+  }
+  
+  #suggestion .suggestion-result {
+	padding: 1em 1em;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	background-color: white !important;
+	border-bottom: solid 2px black;
+  }
+  
+  #suggestion .suggestion-result:hover {
+	background-color: var(--accent-purple) !important;
+	color: var(--accent-text);
+  }
+  
+  #suggestion .no-suggestion-result {
+	padding: 1em 1em;
+	transition: all 0.2s ease-in-out;
+	background-color: white !important;
+  }
+  
+  #suggestion>div {
+	cursor: pointer;
+  }
+
+  .picGame {
+    
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+  }
+
+  .picGame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 300px;
+   
+  }
